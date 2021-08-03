@@ -2,7 +2,7 @@
 	"name": "drag-ruler5e",
 	"title": "Drag Ruler 5e",
 	"description": "Integration of the Drag Ruler module (https://github.com/manuelVo/foundryvtt-drag-ruler) for Dungeons and Dragons 5th Edition",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"minimumCoreVersion" : "0.8.5",
 	"compatibleCoreVersion" : "0.8.8",
 	"author" : "Daniel Johnson",
@@ -15,6 +15,6 @@
 		}
 	],
 	"manifest": "https://raw.githubusercontent.com/kalarin/drag-ruler5e/master/module.json",
-	"download": "https://github.com/kalarin/drag-ruler5e/archive/refs/tags/1.0.zip",
+	"download": "https://github.com/kalarin/drag-ruler5e/archive/refs/tags/1.0.1.zip",
 	"url": "https://github.com/kalarin/drag-ruler5e/"
 }

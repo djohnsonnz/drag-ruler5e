@@ -1,7 +1,7 @@
 Hooks.once("dragRuler.ready", (SpeedProvider) => {
-    // When dragruler is ready to go give it all the PF2 specific stuff
+    
         class DND5eSpeedProvider extends SpeedProvider {
-    //Registers colours for up to four movement actions so colours can be customized for them, and sets defaults
+    
     get colors() {
         return [
             {id: "move", default: 0x3222C7},
@@ -22,10 +22,10 @@ Hooks.once("dragRuler.ready", (SpeedProvider) => {
             {range: baseSpeed, color: "walk"},
             {range: baseSpeed * 2, color: "dash"}
         ]
-                
+
         return ranges
     }
 }
 
-dragRuler.registerModule("my-module-id", DND5eSpeedProvider)
+dragRuler.registerModule("drag-ruler5e", DND5eSpeedProvider)
 })
