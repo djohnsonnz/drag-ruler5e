@@ -5,21 +5,14 @@
 	"version": "1.0.0",
 	"minimumCoreVersion" : "0.8.5",
 	"compatibleCoreVersion" : "0.8.8",
-	"authors": [
-		{
-			"name": "Daniel Johnson",
-			"email": "djohnson@dsj.co.nz",
-			"discord": "Kalarin#2081"
-		}
-	],
-	"esmodules": [
-		"src/main.js"		
-	],		
+	"author" : "Daniel Johnson",
+	"esmodules": ["src/main.js"],		
 	"dependencies": [
 		{
 		  "name": "drag-ruler",
 		  "type": "module",
 		  "manifest": "https://raw.githubusercontent.com/manuelVo/foundryvtt-drag-ruler/master/module.json"
 		}
-	]
+	],
+	"manifest": "https://github.com/kalarin/drag-ruler5e/blob/main/module.json"
 }
