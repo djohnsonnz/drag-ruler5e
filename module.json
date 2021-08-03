@@ -14,5 +14,7 @@
 		  "manifest": "https://raw.githubusercontent.com/manuelVo/foundryvtt-drag-ruler/master/module.json"
 		}
 	],
-	"manifest": "https://raw.githubusercontent.com/kalarin/drag-ruler5e/master/module.json"
+	"manifest": "https://raw.githubusercontent.com/kalarin/drag-ruler5e/master/module.json",
+	"download": "https://github.com/kalarin/drag-ruler5e/archive/refs/heads/main.zip",
+	"url": "https://github.com/kalarin/drag-ruler5e/"
 }
