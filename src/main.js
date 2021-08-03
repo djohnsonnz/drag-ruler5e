@@ -4,19 +4,21 @@ Hooks.once("dragRuler.ready", (SpeedProvider) => {
     
     get colors() {
         return [
-            {id: "move", default: 0x3222C7},
+            {id: "walk", default: 0x3222C7},
             {id: "dash", default: 0xFFEC07},
             {id: "cunning", default: 0xC033E0},            
         ]
     }
 
     getRanges(token) {
-        if (token.actor.data.attributes.movement.fly > 0) {
-            const baseSpeed = token.actor.data.movement.fly
+        let baseSpeed;
+        
+        if (token.actor.data.data.attributes.movement.fly > 0) {
+            baseSpeed = token.actor.data.data.attributes.movement.fly
         } else {
-            const baseSpeed = token.actor.data.movement.walk
+            baseSpeed = token.actor.data.data.attributes.movement.walk
         }
-
+   //     const baseSpeed = token.actor.data.data.attributes.movement.fly
         // A character can always walk it's base speed and dash twice it's base speed
         const ranges = [
             {range: baseSpeed, color: "walk"},
