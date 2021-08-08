@@ -6,7 +6,8 @@
 	"minimumCoreVersion" : "0.8.5",
 	"compatibleCoreVersion" : "0.8.8",
 	"author" : "Daniel Johnson",
-	"esmodules": ["src/main.js"],		
+	"esmodules": ["src/main.js", "src/hudnew.js"],
+	"styles": ["/css/drag-ruler5e-icons.css"],		
 	"dependencies": [
 		{
 		  "name": "drag-ruler",

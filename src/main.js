@@ -10,16 +10,20 @@ Hooks.once("dragRuler.ready", (SpeedProvider) => {
         ]
     }
 
+    //movementDistance = ''
+
     getRanges(token) {
-        let baseSpeed;
+        let baseSpeed = token.actor.getFlag("drag-ruler5e", "movementDistance")
         
-        if (token.actor.data.data.attributes.movement.fly > 0) {
+        // will eventually need to be based on movement type for active clicked token
+       /*  if (movementDistance > 0) {
             baseSpeed = token.actor.data.data.attributes.movement.fly
         } else {
             baseSpeed = token.actor.data.data.attributes.movement.walk
-        }
-   //     const baseSpeed = token.actor.data.data.attributes.movement.fly
+        } */
+        // const baseSpeed = token.actor.data.data.attributes.movement.fly
         // A character can always walk it's base speed and dash twice it's base speed
+        // logic for cunning action will go here
         const ranges = [
             {range: baseSpeed, color: "walk"},
             {range: baseSpeed * 2, color: "dash"}
