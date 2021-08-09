@@ -42,28 +42,64 @@ class TokenRulermovementDistance {
 
         let defaultButtons = '';
         {    
+            
             if (walk != 0 && walk != null){
                 walkButton = $(`<div class="control-icon token-info-icon-walk" title="Walk Speed: ${walk}"><i class="fas fa-shoe-prints"></i> ${walk}</div>`);
                 walkButton.click((event) => {
                     walkButton.addClass("active")
+                    if (burrowButton != 0 && burrowButton != null) {burrowButton.removeClass("active")}
                     if (flyButton != 0 && flyButton != null) {flyButton.removeClass("active")}
+                    if (swimButton != 0 && swimButton != null) {swimButton.removeClass("active")}
                     actor.setFlag("drag-ruler5e", "movementDistance", actor.data.data.attributes.movement.walk)
                     actor.setFlag("drag-ruler5e", "movementType", "walk") 
                 })  
             } 
+            
             if (fly != 0 && fly != null){ 
                 flyButton = $(`<div class="control-icon token-info-icon-fly" title="Fly Speed: ${fly}"><i class="fas fa-crow"></i> ${fly}</div>`);
                 flyButton.click((event) => {
                     flyButton.addClass("active")
-                    walkButton.removeClass("active")
+                    if (burrowButton != 0 && burrowButton != null) {burrowButton.removeClass("active")}
+                    if (swimButton != 0 && swimButton != null) {swimButton.removeClass("active")}
+                    if (walkButton != 0 && walkButton != null) {walkButton.removeClass("active")}
                     actor.setFlag("drag-ruler5e", "movementDistance", actor.data.data.attributes.movement.fly);
                     actor.setFlag("drag-ruler5e", "movementType", "fly")
                 })
             }
-            if (swim != 0 && swim != null) swimButton = `<div class="control-icon token-info-icon" title="Swim Speed: ${swim}"><i class="fas fa-swimmer"></i> ${swim}</div>`;
-            if (burrow != 0 && burrow != null) burrowButton = `<div class="control-icon token-info-icon" title="Burrow Speed: ${burrow}"><i class="fas fa-mountain"></i> ${burrow}</div>`;
+            
+            if (swim != 0 && swim != null){
+                swimButton = $(`<div class="control-icon token-info-icon" title="Swim Speed: ${swim}"><i class="fas fa-swimmer"></i> ${swim}</div>`);
+                swimButton.click((event) => {
+                    swimButton.addClass("active")
+                    if (burrowButton != 0 && burrowButton != null) {burrowButton.removeClass("active")}
+                    if (flyButton != 0 && flyButton != null) {flyButton.removeClass("active")}
+                    if (walkButton != 0 && walkButton != null) {walkButton.removeClass("active")}
+                    actor.setFlag("drag-ruler5e", "movementDistance", actor.data.data.attributes.movement.swim);
+                    actor.setFlag("drag-ruler5e", "movementType", "swim")
+                })
+            }
+            
+            if (burrow != 0 && burrow != null){
+                burrowButton = $(`<div class="control-icon token-info-icon" title="Burrow Speed: ${burrow}"><i class="fas fa-mountain"></i> ${burrow}</div>`);
+                burrowButton.click((event) => {
+                    burrowButton.addClass("active")                    
+                    if (flyButton != 0 && flyButton != null) {flyButton.removeClass("active")}
+                    if (swimButton != 0 && swimButton != null) {swimButton.removeClass("active")}
+                    if (walkButton != 0 && walkButton != null) {walkButton.removeClass("active")}
+                    actor.setFlag("drag-ruler5e", "movementDistance", actor.data.data.attributes.movement.burrow);
+                    actor.setFlag("drag-ruler5e", "movementType", "burrow")
+                })
+            }
+
             defaultButtons = `${walkButton}${flyButton}${swimButton}${burrowButton}`;
-        }  let buttons = $(`<div class="col token-info-column-left">${defaultButtons}</div>`);
+            
+
+        }  
+        
+        //display button on far left
+        let newdiv = '<div class="token-info-container">';
+        
+        let buttons = $(`<div class="col token-info-column-left">${defaultButtons}</div>`);
         
 
         //let newdiv = '<div class="token-info-container" data-action="movementDistance-selector" >';    
@@ -89,10 +125,14 @@ class TokenRulermovementDistance {
             }
         }    */    
         
-        html.find('.col.left').prepend(walkButton)
-        html.find('.col.left').prepend(flyButton)
+        html.find('.col.left').wrap(newdiv);
+        //html.find('.col.left').before(buttons)
+        html.find('.col.left').before(walkButton)
+        html.find('.col.left').before(flyButton)
+        html.find('.col.left').before(swimButton)
+        html.find('.col.left').before(burrowButton)
             
-        //html.find('.col.left').wrap(newdiv);
+        
         //html.find('.col.left').before(buttons)
            
     }
