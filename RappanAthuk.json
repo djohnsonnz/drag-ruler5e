@@ -1,0 +1,1328 @@
+{
+	"$schema": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_schema-fast/homebrew.json",
+    "_meta": {
+		"sources": [
+			{
+				"json": "RA",
+				"abbreviation": "RA",
+				"full": "Rappan Athuk",
+				"version": "1.0.0",
+				"color": "3F7348",
+				"authors": [
+					"Frog God Games"
+				],
+				"url": "https://www.froggodgames.com/product/rappan-athuk/",
+				"convertedBy": [
+					"Kalarin"
+				]
+			}
+		],
+		"dateAdded": 1555492476,
+		"dateLastModified": 1638810656
+	},
+    "disease": [
+		{
+			"name": "Bubonic Plague",
+			"entries": [
+                "The first time a creature approaches within 5 ft. of a creature carrying the bubonic plague, and every hour in proximity thereafter, it must succeed on a {@dc 15} Constitution saving throw. Onset is after {@dice 1d4} days, after which the victim becomes contagious. The victim loses {@dice 1d4} points of constitution and 1 point of charisma per day thereafter; they may attempt a {@dc 15} Constitution saving throw each day to avoid the ability damage; two successful saving throws in a row defeats the disease. If the victim is still alive after 5 failed saving throws, they become incapacitated from cramps and pain. Once the victim is no longer ill, the ability loss heals normally at one point of each ability after every long rest"
+			],
+			"source": "RA",
+			"page": 653
+		},		
+        {
+			"name": "Goblin Gout",
+			"entries": [
+                "In goblinoid creatures, this disease causes a level of rabid response, making them likely to bight instead of using their weapons, and irrationally brave in their attacks. They make all attacks with advantage, but all attacks against them have advantage. On any combat round, a diseased goblinoid is 50% likely to attempt to bite its adversary rather than use any other attack. Any creature bitten by an infected goblinoid must succeed on a DC 15 Constitution saving throw or contract the disease. After an incubation period of 1d3 days, the victim develops the symptoms of the disease. If the victim is not goblinoid, the creature develops aching joints and stiffness. The victim’s movement is reduced by 20 ft. (5 ft. minimum) and they have disadvantage on attack rolls and Dexterity saving throws and skill checks. The victim may attempt a DC 15 Constitution saving throw after any long rest. With two consecutive passes, they shake off the effects of the disease."
+            ],
+            "source": "RA",
+			"page": 653
+		},	
+        {
+			"name": "The Grunge",
+			"entries": [
+                "This disease is spread through contact with goblin-infested waste. It causes blurriness of vision and a slight palsy. Any creature making contact with infected material must succeed on a {@dc 14} Constitution saving throw or become infected. One hour later, the disease sets in, and the creature has a –1 penalty on all to-hit rolls for 24 hours. A creature who rolls a 1 or lower on their saving throw must make an additional saving throw after 24 hours. A creature who fails this second saving throw permanently loses 1 point of strength. The strength can be regained only with a greater restoration or a wish spell."
+            ],
+            "source": "RA",
+			"page": 653
+		},	
+        {
+			"name": "Hanta Virus",
+			"entries": [
+                "The disease is typically caught from contact with rodents and rodent waste. Normally a Constitution saving throw is required to prevent contagion, with the DC dependent on the amount of contagious material contacted and the method of contact. Hanta virus incubates {@dice 1d8+7} days before beginning its deadly course. For the first four days after the incubation stage, a creature infected with this disease must make a {@dc 16} Constitution saving throw every 24 hours. The victim acquires one level of exhaustion for each failure. The exhaustion cannot be removed while the disease persists. Starting on the fifth day, failed saving rolls indicate that the victim loses 2d10 hit points from their maximum as well as gaining a level of exhaustion. Once the disease has been cured, the exhaustion can be cured with rest or by magic, and the loss of maximum hit points is restored after a long rest. Unless cured by magic, this disease is ultimately fatal."
+            ],
+            "source": "RA",
+			"page": 653
+		},	
+        {
+			"name": "Hemophilia",
+			"entries": [
+                "Hemophilia is typically a genetic disorder and as such is normally only acquired through magical means. A creature who has this disease loses 1 hp per round until magically healed after suffering any bludgeoning, piercing, or slashing damage. The damage lost per round is cumulative with additional sources of damage."
+            ],
+            "source": "RA",
+			"page": 654
+		},	
+        {
+			"name": "Leech Fever",
+			"entries": [
+                "This anemia-causing disease comes from the bite of infected leeches. It is otherwise not contagious. Anybody bitten by an infected leech must make a {@dc 16} Constitution saving throw or contract the disease. The disease incubates for {@dice 1d3} days before causing symptoms. At this point, the anemia causes two levels of exhaustion. The exhaustion cannot be eliminated while the disease is still active. After the symptoms have developed, the victim may attempt a {@dc 16} Constitution saving throw after every long rest. Two consecutive successful saving throws indicate the victim has thrown off the disease. The exhaustion can then be removed normally. Lesser Restoration or similar magical healing eliminates the disease at any point."
+            ],
+            "source": "RA",
+			"page": 654
+		},	
+        {
+			"name": "Mummy Rot",
+			"entries": [
+                "Mummy rot first causes desiccation and then a slow decomposition. Vision goes early on as the body loses fluids, followed by ever-increasing weakness. Death comes late, well after the victim is completely incapacitated from weakness.",
+                "When a humanoid is exposed to the disease, either by magical means or through inhaling the dust of a former victim, the creature must make a Constitution saving throw. The DC for the saving throw depends on the power of the curse for magical contagion, and is a {@dc 14} Constitution saving throw for breathing grave dust. Mummy rot typically manifests immediately with a strong level of thirst. The victim must double its water consumption or gain one level of exhaustion. Every 24 hours, the victim must make a {@dc 17} Constitution saving throw. Each failure adds one symptom from the table below until death occurs. Two consecutive passes halts the disease but does not remove existing symptoms. Remove Curse destroys the disease and heals all damage. A single casting of Lesser Restoration removes the most recent symptom still present. Symptoms in order of appearance based on number of failed saving throws",
+                "<table>",
+				"<tbody>",
+				"<tr>",
+				"<td><strong>Failures</strong></td>",
+				"<td><strong>Symptoms</strong></td>",
+				"</tr>",
+				"<tr>",
+				"<td>0</td>",
+				"<td>Thirst &mdash; double water consumption or gain one level of {@condition exhaustion}</td>",
+				"</tr>",
+				"<tr>",
+				"<td>1</td>",
+				"<td>Gain one level {@condition exhaustion} and lose {@dice 1d4} points of Charisma</td>",
+				"</tr>",
+				"<tr>",
+				"<td>2</td>",
+				"<td>Vision reduced by 30 ft.</td>",
+				"</tr>",
+				"<tr>",
+				"<td>3</td>",
+				"<td>Gain one level {@condition exhaustion} and lose {@dice 1d4} points of Charisma*</td>",
+				"</tr>",
+				"<tr>",
+				"<td>4</td>",
+				"<td>Blind</td>",
+				"</tr>",
+				"<tr>",
+				"<td>5</td>",
+				"<td>Gain one level {@condition exhaustion} and lose {@dice 1d4} points of Charisma*</td>",
+				"</tr>",
+				"<tr>",
+				"<td>6</td>",
+				"<td>Gain one level {@condition exhaustion} and Charisma is now 1</td>",
+				"</tr>",
+				"<tr>",
+				"<td>7</td>",
+				"<td>Lose {@dice 2d6} each of Constitution, Dexterity, and Strength*</td>",
+				"</tr>",
+				"<tr>",
+				"<td>8</td>",
+				"<td>Constitution, Dexterity, and Strength are now 1&nbsp;</td>",
+				"</tr>",
+				"<tr>",
+				"<td>9+</td>",
+				"<td>Lose 1 hp for each failed save until death</td>",
+				"</tr>",
+				"</tbody>",
+				"</table>",
+                "*Charisma does not drop below 1. If Constitution, Dexterity, or Strength drop to 0, the victim is dead."
+            ],
+            "source": "RA",
+			"page": 654
+		},	
+        {
+			"name": "Pestilence",
+			"entries": [
+                "The pestilence is typically caught from contact with bodily fluids of a creature carrying the disease. Every round that a creature is in contact with an infected creature or some of its fluid, it must succeed on a {@dc 14} Constitution saving throw or contract the disease. Anyone infected will begin losing hit points at a rate of one per hour until death. A {@dc 10} Constitution saving throw is allowed each hour to avoid the hit point loss for that hour, but the process continues afterwards. Magical healing increases the victim’s hit points, but the progress of the disease continues after the curing. Lesser restoration completely removes the disease and return the victim back to health, although it does not restore the lost hit points. If the victim dies from the course of the disease, the body rises as a plague zombie in {@dice 1d4+1} rounds. A sprinkling of holy water or a lesser restoration spell cast on the body prevents this from happening. The body may be raised from the dead normally, but not while it is still “alive” as a plague zombie."
+            ],
+            "source": "RA",
+			"page": 654
+		},	
+        {
+			"name": "Slimy Doom",
+			"entries": [
+                "Slimy Doom is caught from contact with the remains of a creature that dies of Tsathoggan Rotting Disease. For each round of contact with dissolved flesh of such a victim, a creature must succeed on a {@dc 16} Constitution saving throw or succumb to the disease with no initial incubation period. Slimy doom turns a person into goo from the inside out. Each day, the victim must pass a {@dc 16} Constitution saving throw or lose {@dice 1d4} points of their constitution. At 0 constitution, they are nothing more than a fleshy bag of pus and bloody foam. Those who are cured by spell or who pass two daily saving throws in a row, must make one additional saving throw for each day they took constitution damage. If these saving throws fail, the victim has permanently lost a point of constitution per failed saving throw."
+            ],
+            "source": "RA",
+			"page": 654
+		},	
+        {
+			"name": "Tsathoggan Rotting Disease",
+			"entries": [
+                "This disease comes from a curse and is not contagious. A creature so cursed must make a {@dc 14} Charisma saving throw to resist the allure of Tsathhogga. Once afflicted, the victim must succeed on a {@dc 16} Constitution saving throw every 24 hours or lose {@dice 1d4} points of Constitution as their insides turn to goo. Passing two consecutive saving throws halts the disease and the ability point damage heals normally at one point per long rest or can be cured magically"
+            ],
+            "source": "RA",
+			"page": 654
+		}	        
+	],
+    "baseitem":[
+        {
+			"name": "War Scythe",
+			"source": "RA",
+			"page": 0,
+			"srd": false,
+			"basicRules": true,
+			"type": "M",
+			"rarity": "none",
+			"weight": 1,
+			"value": 0,
+			"weaponCategory": "martial",
+			"property": [
+				"H",
+				"R",
+				"2H"
+			],			
+			"dmg1": "1d10",
+			"dmgType": "S",			
+			"weapon": true
+		}
+    ],    
+    "item":[
+        {
+			"name": "Potion of Frozen Concoction",
+			"source": "RA",
+			"page": 110,
+			"type": "P",
+			"rarity": "rare",
+			"entries": [
+				"You can throw this potion at a point within 30 ft. All creatures within 5 ft. of where it lands must make a DC 15 Dexterity saving throw. A creature that fails the saving throw takes {@damage 2d8} cold damage and is {@spell slow|slowed} (as the spell) for 1 round. A creature that succeeds on the saving throw takes half this damage and is not slowed"
+			]
+		},
+        {
+            "name": "Amulet of Demon Control",
+            "source": "RA",
+            "page": 639,            
+            "rarity": "very rare",                        
+            "reqAttune": true,
+            "wondrous": true,
+            "charges": 1,            
+            "entries": [
+                "While you wear this amulet, demons are susceptible to your control. Once per day, you can use the amulet to cast {@spell suggestion} on a demon. The demon must attempt a DC 20 Wisdom saving throw or be under the effect of the suggestion. The duration of the effect is 24 hours."
+            ],
+            "attachedSpells": [
+                "suggestion"                
+            ],
+            "foundryData:": {
+                "activation": {
+                    "type": "action",
+                    "cost": 1
+                }
+            },            
+            "foundryFlags": {
+                "magicitems": {
+                    "enabled": true,
+                    "equipped": true,
+                    "attuned": true,
+                    "charges": "1",
+                    "chargeType": "c1",
+                    "destroy": false,
+                    "destroyCheck": "d2",
+                    "destroyType": "dt2",
+                    "rechargeable": true,
+                    "recharge": "1",
+                    "rechargeType": "t2",
+                    "rechargeUnit": "r2",
+                    "sorting": "l",
+                    "spells": {
+                        "0": {
+                            "id": "zMAWdyc8UVb37BK4",
+                            "name": "Suggestion",
+                            "pack": "dnd5e.spells",
+                            "img": "systems/dnd5e/icons/spells/air-burst-magenta-2.jpg",
+                            "baseLevel": "2",
+                            "level": "2",
+                            "consumption": "1",
+                            "upcast": "2",
+                            "upcastCost": "1",
+                            "flatDc": true,
+                            "dc": "20"
+                        }
+                    }
+                }
+            }                     
+        }     
+    ],
+    "variant":[
+        {
+            "name": "Screaming Sword",
+            "type": "GV",
+            "requires": [
+                {
+                    "sword": true
+                }
+            ],
+            "inherits": {
+                "namePrefix": "Screaming Sword ",
+                "source": "RA",
+                "page": 0,
+                "rarity": "rare",
+                "reqAttune": true,
+                "bonusWeapon": "+1",
+                "entries": [
+                    "You gain a {=bonusWeapon} bonus to attack and damage rolls with this weapon. If you hit a creature that has a chaotic alignment, the sword releases a frightening shriek. The target must succeed on a DC 15 Wisdom saving throw or become {@condition frightened} of the sword for 1 minute. A {@condition frightened} target may attempt a new saving throw and the end of each of its turns, ending the effect on a success."            
+                ]
+            }
+        }
+    ],
+    "legendaryGroup": [
+		{
+			"name": "Avatar of Orcus (Full Strength)",
+			"source": "RA",
+			"lairActions": [
+				"On Initiative count 20 (losing initiative ties), Orcus can take a lair action to cause one of the following effects. He can’t use the same effect two rounds in a row.",
+				{
+					"type": "list",
+					"items": [
+                        "Bone Cage. Orcus causes all bones within the lair to form tight cages around two creatures of his choice. The cages can be attacked and destroyed (AC 15; hp 30; vulnerability to bludgeoning damage; resistance to piercing, poison, slashing, and psychic damage). Until they are destroyed, creatures within the cages have a movement of 0.",
+                        "Fountain of Blood. Orcus chooses a point on the ground that he can see within 100 feet of him. A geyser of caustic blood erupts from the ground at that point and rains down in a 40-foot high, 10-foot cylinder. Each creature in that area must succeed on a {@dc 24} Dexterity saving throw, taking 24 ({@damage 7d6}) acid damage on a failure, or half as much damage on a success."
+					]
+				}
+			]
+        },
+        {
+			"name": "Avatar of Orcus (One Shrine Destroyed)",
+			"source": "RA",
+			"lairActions": [
+				"On Initiative count 20 (losing initiative ties), Orcus can take a lair action to cause one of the following effects. He can’t use the same effect two rounds in a row.",
+				{
+					"type": "list",
+					"items": [
+                        "Bone Cage. Orcus causes all bones within the lair to form tight cages around two creatures of his choice. The cages can be attacked and destroyed (AC 15; hp 30; vulnerability to bludgeoning damage; resistance to piercing, poison, slashing, and psychic damage). Until they are destroyed, creatures within the cages have a movement of 0.",
+                        "Fountain of Blood. Orcus chooses a point on the ground that he can see within 100 feet of him. A geyser of caustic blood erupts from the ground at that point and rains down in a 40-foot high, 10-foot cylinder. Each creature in that area must succeed on a {@dc 23} Dexterity saving throw, taking 24 ({@damage 6d6}) acid damage on a failure, or half as much damage on a success."
+					]
+				}
+			]
+        },
+        {
+			"name": "Avatar of Orcus (Two Shrines Destroyed)",
+			"source": "RA",
+			"lairActions": [
+				"On Initiative count 20 (losing initiative ties), Orcus can take a lair action to cause one of the following effects. He can’t use the same effect two rounds in a row.",
+				{
+					"type": "list",
+					"items": [
+                        "Bone Cage. Orcus causes all bones within the lair to form tight cages around two creatures of his choice. The cages can be attacked and destroyed (AC 15; hp 30; vulnerability to bludgeoning damage; resistance to piercing, poison, slashing, and psychic damage). Until they are destroyed, creatures within the cages have a movement of 0.",
+                        "Fountain of Blood. Orcus chooses a point on the ground that he can see within 100 feet of him. A geyser of caustic blood erupts from the ground at that point and rains down in a 40-foot high, 10-foot cylinder. Each creature in that area must succeed on a {@dc 24} Dexterity saving throw, taking 22 ({@damage 6d6}) acid damage on a failure, or half as much damage on a success."
+					]
+				}
+			]
+        },{
+			"name": "Avatar of Orcus (Three Shrines Destroyed)",
+			"source": "RA",
+			"lairActions": [
+				"On Initiative count 20 (losing initiative ties), Orcus can take a lair action to cause one of the following effects. He can’t use the same effect two rounds in a row.",
+				{
+					"type": "list",
+					"items": [
+                        "Bone Cage. Orcus causes all bones within the lair to form tight cages around two creatures of his choice. The cages can be attacked and destroyed (AC 15; hp 30; vulnerability to bludgeoning damage; resistance to piercing, poison, slashing, and psychic damage). Until they are destroyed, creatures within the cages have a movement of 0.",
+                        "Fountain of Blood. Orcus chooses a point on the ground that he can see within 100 feet of him. A geyser of caustic blood erupts from the ground at that point and rains down in a 40-foot high, 10-foot cylinder. Each creature in that area must succeed on a {@dc 24} Dexterity saving throw, taking 21 ({@damage 4d6}) acid damage on a failure, or half as much damage on a success."
+					]
+				}
+			]
+        }
+    ],
+    "monster": [
+        {
+            "name": "Avatar of Orcus (Full Strength)",
+            "source": "RA",
+            "page": 0,
+            "size": "H",
+            "type": {
+                "type": "fiend",
+                "tags": [
+                    "demon"
+                ]
+            },
+            "alignment": [
+                "C",
+                "E"
+            ],
+            "ac": [
+                {
+                    "ac": 25,
+                    "from": [
+                        "natural armor"
+                    ]
+                }
+            ],
+            "hp": {
+                "average": 825,
+                "formula": "50d12 + 500"
+            },
+            "speed": {
+                "walk": 40,
+                "fly": 60
+            },
+            "str": 30,
+            "dex": 21,
+            "con": 30,
+            "int": 27,
+            "wis": 27,
+            "cha": 30,
+            "save": {
+                "dex": "+15",
+                "con": "+20",
+                "wis": "+18",
+                "cha": "+20"
+            },
+            "skill": {
+                "history": "+18",
+                "perception": "+18",
+                "religion": "+18"
+            },
+            "senses": [
+                "truesight 120 ft."
+            ],
+            "passive": 28,
+            "resist": [
+                "acid",
+                "cold",
+                "fire"
+            ],
+            "immune": [
+                "lightning",
+                "necrotic",
+                "poison",
+                {
+                    "immune": [
+                        "bludgeoning",
+                        "piercing",
+                        "slashing"
+                    ],
+                    "note": "from nonmagical weapons",
+                    "cond": true
+                }
+            ],
+            "conditionImmune": [
+                "charmed",
+                "exhaustion",
+                "frightened",
+                "poisoned"
+            ],
+            "languages": [
+                "all",
+                "telepathy 360 ft."
+            ],
+            "cr": "35",            
+            "spellcasting": [
+                {
+                    "name": "Innate Spellcasting",
+                    "headerEntries": [
+                        "Orcus's spellcasting ability is Charisma (spell save {@dc 28}, +{@hit 20} to hit with spell attacks). Orcus can innately cast the following spells, requiring no material components: at will: animate dead, chill touch, detect magic"
+                    ],
+                    "daily": {
+                        "5": [
+                            "{@spell eyebite}"
+                        ],
+                        "7": [
+                            "{@spell create undead}"
+                        ],
+                        "3e": [
+                            "{@spell circle of death}",
+                            "{@spell finger of death}"
+                        ]
+                    },
+                    "ability": "cha"
+                }
+            ],
+            "trait": [
+                {
+                    "name": "Aura of Death",
+                    "entries": [
+                        "Each non-undead creature that starts its turn within 20 feet of Orcus takes 17 ({@damage 5d6}) necrotic damage."
+                    ]
+                },
+                {
+                    "name": "Wand of Orcus",
+                    "entries": [
+                        "The wand has 20 charges, and any of its properties that require a saving throw have a save DC of 17. While holding it, Orcus can use an action to cast blight, darkness, or speak with dead. Alternatively, he can expend 1 or more of the wand's charges to cast one of the following spells from it: bestow curse (1 charge), contagion (2 charges), or power word kill (5 charges). The wand regains all charges daily at dawn. While in his lair, Orcus can use the wand to summon an undead army that consists of:",
+                        {
+                            "type": "list",
+                            "items": [
+                                "10 skeletons",
+                                "5 zombies",
+                                "3 ghouls",
+                                "3 specters",
+                                "2 wights",
+                                "1 mummy."
+                            ]
+                        },
+                        "These undead magically rise up from the ground or otherwise form in unoccupied spaces within 100 feet of Orcus and obey his commands until they are destroyed or until he dismisses them as an action. Orcus can only use the wand in this manner once every 24 hours. The wand functions differently from this description for any creature other than Orcus."
+                    ]
+                },
+                {
+                    "name": "Legendary Resistance (3/Day)",
+                    "entries": [
+                        "If Orcus fails a saving throw, it can choose to succeed instead."
+                    ]
+                },
+                {
+                    "name": "Lord of the Grave",
+                    "entries": [
+                        "Orcus always casts animate dead or create undead at maximum level and without any restrictions. Creatures created by these spells remain under his control indefinitely."
+                    ]
+                },
+                {
+                    "name": "Magic Resistance",
+                    "entries": [
+                        "Orcus has advantage on saving throws against spells and other magical effects."
+                    ]
+                },
+                {
+                    "name": "Magic Weapons",
+                    "entries": [
+                        "Orcus's attacks are magical."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Multiattack",
+                    "entries": [
+                        "Orcus makes two Wand of Orcus attacks."
+                    ]
+                },
+                {
+                    "name": "Wand of Orcus",
+                    "entries": [
+                        "{@atk mw} +{@hit 20} to hit, reach 5 ft., one target. {@h}24 ({@damage 4d6 + 10}) bludgeoning damage and the target must succeed on a {@dc 17} Charisma saving throw or drop to 0 hit points. On a success, the target takes 21 ({@damage 6d6}) necrotic damage."
+                    ]
+                },
+                {
+                    "name": "Tail",
+                    "entries": [
+                        "{@atk mw} +{@hit 20} to hit, reach 5 ft., one target. {@h}24 ({@damage 4d6 + 10}) piercing damage plus 22 ({@damage 4d10}) poison damage and the target must succeed on a {@dc 20} Strength check or be knocked {@condition prone}."
+                    ]
+                },
+                {
+                    "name": "Aura of Enfeeblement {@recharge 5}",
+                    "entries": [
+                        "Black beams of negative energy surround Orcus in a 20-foot radius centered on him. Each creature in this area must make a {@dc 24} Constitution saving throw. On a failure, the target deals only half damage with weapon attacks that use Strength for 1 minute. A weakened target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a target's saving throw is successful or the effect ends for it, the target is immune to Orcus's Aura of Enfeeblement for the next 24 hours."
+                    ]
+                },
+                {
+                    "name": "Teleport",
+                    "entries": [
+                        "Orcus magically teleports, along with any equipment he is wearing or carrying, up to 120 feet to an unoccupied space he can see."
+                    ]
+                }
+            ],
+            "legendary": [
+                {
+                    "name": "Tail",
+                    "entries": [
+                        "Orcus makes one tail attack."
+                    ]
+                },
+                {
+                    "name": "Devouring Darkness (Costs 2 Actions)",
+                    "entries": [
+                        "Orcus chooses a point that he can see within 100 feet of him. A cloud of darkness erupts from that point and lasts for 1 minute. The area is heavily obscured and each creature in the area must make a {@dc 24} Constitution saving throw, taking 28 ({@damage 8d6}) necrotic damage on a failure, or half as much damage on a success. Creatures slain by the devouring darkness rise as ghouls under the command of Orcus within {@dice 1d4} rounds."
+                    ]
+                },
+                {
+                    "name": "Charnel Wind (Costs 3 Actions)",
+                    "entries": [
+                        "A putrid, carrion wind erupts from Orcus in a 30-foot radius centered on him and lasts until the end of Orcus's next turn. All non-undead creatures within this area must succeed on a {@dc 24} Constitution saving throw against disease or be {@condition poisoned} until the end of Orcus's next turn. While {@condition poisoned} in this way, the creature can take either an action or a bonus action on its turn, not both, and it can't take reactions."
+                    ]
+                }
+            ],
+            "legendaryGroup": {
+				"name": "Avatar of Orcus (Full Strength)",
+				"source": "RA"
+			},
+            "traitTags": [
+                "Legendary Resistances",
+                "Magic Resistance",
+                "Magic Weapons"
+            ],
+            "senseTags": [
+                "U"
+            ],
+            "actionTags": [
+                "Multiattack",
+                "Teleport"
+            ],
+            "languageTags": [
+                "TP",
+                "XX"
+            ],
+            "damageTags": [
+                "B",
+                "I",
+                "N",
+                "P"
+            ],
+            "spellcastingTags": [
+                "I"
+            ],
+            "miscTags": [
+                "AOE",
+                "MW"
+            ],
+            "conditionInflict": [
+                "poisoned",
+                "prone"
+            ],
+            "conditionInflictSpell": [
+                "frightened",
+                "unconscious"
+            ]
+        }
+    ],
+    "spell":[
+        {
+            "name": "Advanced Illusion",
+            "source": "RA",
+            "page": 0,
+            "level": 5,
+            "school": "I",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a bit of fleece and some sand"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 10
+                    }
+                }
+            ],
+            "entries": [
+                "This spell is similar to programmed illusion except that it takes place immediately and disappears at the end of the duration. The program must be specified when the spell is cast and cannot be changed."
+            ]
+        }
+        ,
+        {
+            "name": "Anima Lock",
+            "source": "RA",
+            "page": 0,
+            "level": 9,
+            "school": "A",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "miles",
+                    "amount": 1
+                }
+            },
+            "components": {
+                "v": true
+            },
+            "duration": [
+                {
+                    "type": "permanent",
+                    "ends": [
+                        "dispel"
+                    ]
+                }
+            ],
+            "entries": [
+                "When you cast this spell, choose any number of doors, windows, gates, etc. within range that you are familiar with. These portals become locked for the duration. They can be opened by casting dispel magic against a spell cast with a 9th level spell slot. They can be opened by a wish. The portals are immune to damage from non-magical weapons, and have an AC of 25 and 200 hit points. For you and any others you designate specifically or generally at the time of casting, the doors are not locked."
+            ]
+        }
+        ,
+        {
+            "name": "Conjure Fiend",
+            "source": "RA",
+            "page": 0,
+            "level": 7,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "minute"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 90
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "hour",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "You summon a fiend of challenge rating 4 or lower, which appears in an unoccupied space that you can see within range. The fiend disappears when it drops to 0 hit points or when the spell ends.",
+                "The fiend is friendly to you and your companions for the duration. Roll initiative for the fiend, which has its own turns. It obeys any verbal commands that you issue to it (no action required by you), as long as they don't violate its alignment. If you don't issue any commands to the fiend, it defends itself from hostile creatures but otherwise takes no actions.",
+                "The DM has the fiend's statistics."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a 9th-level spell slot, you summon a fiend of challenge rating 5 or lower."
+                    ]
+                }
+            ],
+            "miscTags": [
+                "SGT",
+                "SMN"
+            ]
+        }
+        ,
+        {
+            "name": "Destroy Magic",
+            "source": "RA",
+            "page": 0,
+            "level": 8,
+            "school": "A",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 120
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "When you cast this spell, choose a point within range. All spells of 3rd level or lower acting within 30feet of that point end. For each spell of 4th level level or higher acting within that area, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a successful check, the spell ends. Any common or uncommon magic items in the area automatically lose their magic permanently. The owners of other magic items may attempt a Dexterity saving throw for each item with a bonus based on item's rarity. A failed saving throw means that item's magic is permanently removed. Legendary items only lose their powers for one hour, and artifacts are not affected by the spell. Items that are not carried or held make a generic saving throw using only the bonus given below.",
+                "<table>",
+                "<tbody>",
+                "<tr>",
+                "<td><strong>Rarity</strong></td>",
+                "<td><strong>Bonus</strong></td>",
+                "</tr>",
+                "<tr>",
+                "<td>Rare</td>",
+                "<td>+2</td>",
+                "</tr>",
+                "<tr>",
+                "<td>Very Rare</td>",
+                "<td>+4</td>",
+                "</tr>",
+                "<tr>",
+                "<td>Legendary</td>",
+                "<td>+6</td>",
+                "</tr>",
+                "</tbody>",
+                "</table>",
+                "You may choose not to affect any spell or magic item within the range."
+            ],
+            "savingThrow": [
+                "dexterity"
+            ]
+        }
+        ,
+        {
+            "name": "Distance Distortion",
+            "source": "RA",
+            "page": 0,
+            "level": 5,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 100000
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "friendly earth elemental"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "hour",
+                        "amount": 24
+                    }
+                }
+            ],
+            "entries": [
+                "In order to cast this spell, you must have an earth elemental present that is not hostile to you. When you cast this spell, the earth elemental modifies the vary weave of reality, effectively either doubling or halving the distance in both directions for the duration of the spell. Thus, a 10 feet by 40 feet room could become either 5 feet by 20 feet or 20 feet by 80 feet The transformation is real, and so is not detectable as an illusion, however, the earth elemental may be detected and somebody using true sight can tell that the matter has been compressed or stretched."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell with a 9th level spell slot, the spell lasts until dispelled, without requiring your concentration."
+                    ]
+                }
+            ]
+        }
+        ,
+        {
+            "name": "Grand Curse",
+            "source": "RA",
+            "page": 0,
+            "level": 8,
+            "school": "N",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "hour"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "permanent"
+                }
+            ],
+            "entries": [
+                "As an action, you lay a magnificent curse on the target, who must pass a Wisdom saving throw to avoid it. Curses can include losing 6 points from one ability score, disadvantage on attacks or saving throws, or having to succeed on a Constitution saving throw at the beginning of every round of combat or be {@condition stunned} for one round. It can also take the form of a geas or very strong suggestion.",
+                "If used to place a curse on an area, the caster may affect 80 square feet The nature of the grand curse is decided by the spellcaster upon conclusion of the ritual, which takes 1 hour to complete; any of the above effects may be placed upon the area, and creature that comes into contact with the area is subject to the curse. The player should be creative with the types of curses enacted, but should be in line with the above descriptions.",
+                "The curse can be removed with greater restoration or wish, but not with remove curse."
+            ],
+            "conditionInflict": [
+                "stunned"
+            ],
+            "savingThrow": [
+                "constitution",
+                "wisdom"
+            ]
+        }
+        ,
+        {
+            "name": "Group Haste",
+            "source": "RA",
+            "page": 0,
+            "level": 5,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a shaving of licorice root"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "When you cast the spell {@spell Haste} using a spell slot of 5th level or higher, you can affect an additional 4 creatures for every 2 spell slots above 3rd."
+            ]
+        }
+        ,
+        {
+            "name": "Improved Major Image",
+            "source": "RA",
+            "page": 0,
+            "level": 6,
+            "school": "I",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 120
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a bit of fleece"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 10
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "This spell functions like {@spell Major Image} except that its effects are physical as well as visual, like {@spell Phantasmal Force}."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell with a 9th level spell slot, the spell lasts until dispelled, without requiring your concentration."
+                    ]
+                }
+            ]
+        }
+        ,
+        {
+            "name": "Mage's Evasion",
+            "source": "RA",
+            "page": 0,
+            "level": 9,
+            "school": "C",
+            "time": [
+                {
+                    "number": 10,
+                    "unit": "minute"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": {
+                    "text": "a diamond worth 1000 gp, which the spell consumes when triggered",
+                    "cost": 100000,
+                    "consume": true
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "day",
+                        "amount": 10
+                    }
+                }
+            ],
+            "entries": [
+                "This spell transfers you and everything you carry (except for other creatures or objects that weigh more than 50 pounds) to a destination you designate at the time of casting. When casting mage's evasion, you must specify the locale and detail up to six specific conditions that trigger this spell. When any of these conditions occurs, your body, mind, and soul are transported to the target destination. The location can be any place you very familiar with, as defined by the teleport spell, even on another plane.",
+                "When casting the spell, you cast teleport and possibly other spells that take effect when you arrive at your destination point. The initial casting of mage's evasion drains {@dice 1d6} hit points from the spellcaster. These hit points are \"stored\" in the spell, and may be regained by the caster normally. The stored hit points are immediately recovered by the caster upon the triggering of the evasion.",
+                "The teleport aspect of this spell takes you to your destination, so any condition that prevents teleporting also prevents mage's evasion. Once reaching the destination point, the companion spells included in the evasion instantly and simultaneously take effect. The companion spells must be ones that have a range of self and be of a spell level no higher than one-third of your caster level. The total combined level of companion spells may not exceed your caster level. The conditions you specify to bring the spell into effect must be clear, although they can be general in nature.",
+                "The spell pulls together your mind, body, and soul if they have been separated. For example, if your soul is trapped in a magic jar when the evasion is triggered, your soul returns to your body (breaking the magic jar spell). If your body or soul has been bound by an effect that allowed for a saving throw, you are granted an additional saving throw to escape.",
+                "You may only use one mage's evasion spell at a time; if a second is cast, the first spell (if still active) is dispelled."
+            ],
+            "miscTags": [
+                "HL"
+            ]
+        }
+        ,
+        {
+            "name": "Mirage Arcane",
+            "source": "RA",
+            "page": 0,
+            "level": 6,
+            "school": "I",
+            "time": [
+                {
+                    "number": 10,
+                    "unit": "minute"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 100
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a piece of the actual scene being recreated"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "hour",
+                        "amount": 24
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "When you cast this spell, you cause the area within range to take on the appearance of a region you have previously seen and know well (the quality of the illusion is proportional to your knowledge of the area being recreated; see table below). Creatures within illusion experience the recreated area as if it were real, possibly taking damage from illusory hazards or avoiding damage from real ones while under the illusion. While the illusion can have some movement, such as flowing water, it cannot be controlled actively once created.",
+                "<table>",
+                "<tbody>",
+                "<tr>",
+                "<td><strong>Familiarity </strong></td>",
+                "<td><strong>Save DC modifier</strong></td>",
+                "</tr>",
+                "<tr>",
+                "<td>Very familiar</td>",
+                "<td>None</td>",
+                "</tr>",
+                "<tr>",
+                "<td>Seen casually</td>",
+                "<td>-5</td>",
+                "</tr>",
+                "<tr>",
+                "<td>Viewed once</td>",
+                "<td>-10</td>",
+                "</tr>",
+                "</tbody>",
+                "</table>"
+            ],
+            "entriesHigherLevel": [
+                "At higher levels. If you cast this spell using a 9th level spell slot, the illusion persists without the need for concentration."
+            ]
+        }
+        ,
+        {
+            "name": "Permanent Illusion",
+            "source": "RA",
+            "page": 0,
+            "level": 6,
+            "school": "I",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "permanent"
+                }
+            ],
+            "entries": [
+                "When you use an action to cast this spell, you create a permanent illusion on the surface of a material. The illusion may \"coat\" up to 100 sq. ft of area. The illusion is static and purely visual."
+            ]
+        }
+        ,
+        {
+            "name": "Phase Door",
+            "source": "RA",
+            "page": 0,
+            "level": 7,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "permanent",
+                    "ends": [
+                        "dispel"
+                    ]
+                }
+            ],
+            "entries": [
+                "When you cast this spell, a section of wall within range up to 20 sq. feet in area and up to 2 feet thick is altered such that you and the wall are in opposite phases. Up to six times, you may pass through the wall as if it weren't there. For others, the wall appears and acts as a solid wall. When you walk into the doorway, it appears to others as if you walk into the wall and disappear."
+            ]
+        }
+        ,
+        {
+            "name": "Prayer",
+            "source": "RA",
+            "page": 0,
+            "level": 3,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "Creatures of your choice within 30 feet of a point you can see within range have disadvantage on saving throws while this spell is in effect."
+            ],
+            "miscTags": [
+                "SGT"
+            ]
+        }
+        ,
+        {
+            "name": "Ray of Exhaustion",
+            "source": "RA",
+            "page": 0,
+            "level": 7,
+            "school": "N",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 120
+                }
+            },
+            "components": {
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You send a ray of negative energy at a creature you can see within range. If you hit, the target must attempt a Constitution saving throw. If it fails the saving throw, the creature gains two levels of {@condition exhaustion}. If it succeeds, it gains one level of {@condition exhaustion}. The {@condition exhaustion} can be removed normally through magic or rest."
+            ],
+            "conditionInflict": [
+                "exhaustion"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "miscTags": [
+                "SGT"
+            ]
+        }
+        ,
+        {
+            "name": "Screen",
+            "source": "RA",
+            "page": 0,
+            "level": 7,
+            "school": "I",
+            "time": [
+                {
+                    "number": 10,
+                    "unit": "minute"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "hour",
+                        "amount": 24
+                    }
+                }
+            ],
+            "entries": [
+                "This spell combines several elements to create a powerful protection from scrying and direct observation. When casting the spell, you dictate what will and will not be observed a 30-foot-cube in the spell's area. The illusion created must be stated in general terms. Once the conditions are set, they cannot be changed. Attempts to scry the area with a crystal ball or other magic automatically detect the image stated by you. Sight and sound are appropriate to the illusion created. Direct observation may allow an Intelligence saving throw, if there is cause to disbelieve what is seen. Even entering the area does not cancel the illusion or necessarily allow a saving throw, assuming that hidden beings take care to stay out of the way of those affected by the illusion."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "If you cast this spell using a spell slot of 8th level or higher, you can increase the duration of the illusion. If you use an 8th level slot, it lasts for one year, and if you use a 9th level spell slot to cast this spell, it lasts until you dispel it."
+                    ]
+                }
+            ],
+            "savingThrow": [
+                "intelligence"
+            ]
+        }
+        ,
+        {
+            "name": "Sepia Snake Sigil",
+            "source": "RA",
+            "page": 0,
+            "level": 3,
+            "school": "C",
+            "time": [
+                {
+                    "number": 10,
+                    "unit": "minute"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "touch"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": {
+                    "text": "powdered amber worth 500 gp and a snake scale",
+                    "cost": 50000
+                }
+            },
+            "duration": [
+                {
+                    "type": "permanent",
+                    "ends": [
+                        "discharge"
+                    ]
+                }
+            ],
+            "entries": [
+                "When you cast sepia snake sigil, a small symbol appears in the text of one written work such as a book, scroll, or map. The text containing the symbol must be at least twenty-five words long. When anyone reads the text containing the symbol, the sepia snake springs into being and strikes the reader, provided there is line of effect between the symbol and the reader. The target can attempt a Dexterity saving throw to evade the snake's strike. If it succeeds, the sepia snake dissipates in a flash of brown light accompanied by a puff of dun-colored smoke and a loud noise. If the target fails its save, it is engulfed in a shimmering amber field of force and immobilized until released, either at your command or when {@dice 1d4} days + one day per level of spell slot used to cast the spell have passed.",
+                "While trapped in the amber field of force, the subject does not age, breathe, grow hungry, sleep, or regain spells. It is preserved in a state of suspended animation, unaware of its surroundings. It can be damaged by outside forces (and perhaps even killed), since the field provides no protection against physical injury. However, a dying subject does not make death saves or become stable until the spell ends.",
+                "The hidden sigil cannot be detected by normal observation, and detect magic reveals only that the entire text is charged with abjuration magic. {@spell dispel magic} can remove the sigil."
+            ],
+            "savingThrow": [
+                "dexterity"
+            ]
+        }
+        ,
+        {
+            "name": "Tempus Fugit",
+            "source": "RA",
+            "page": 0,
+            "level": 5,
+            "school": "I",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "radius",
+                "distance": {
+                    "type": "feet",
+                    "amount": 10
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a vial of sand"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "hour",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "When you cast this spell, any creature within the area feels and acts as if time has sped up for them. For every round that passes outside the range of the spell, the creatures inside experience 4 rounds. The creatures can take actions, heal, and so forth at four times the rate of the outside world. They must also eat, rest, and so forth and four times the rate. A creature that enters the range of the spell while it is in progress experiences the time dilation as well."
+            ],
+            "entriesHigherLevel": [
+                "At higher levels. If you cast this spell using a spell slot of 6th level or higher, you can increase the duration of the illusion. For each level above 5th, the duration triples so that using a 9th level spell slot, the duration is 81 hours."
+            ],
+            "miscTags": [
+                "HL"
+            ]
+        }        
+    ]
+}   
